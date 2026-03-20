@@ -132,3 +132,50 @@ const calculate = (a,b) => {
     let res = a+b;
     return res * 2;
 };
+
+let numbersArr = [1,2,3];
+console.log(numbersArr);
+
+console.log(numbersArr[0]);
+console.log(numbersArr[1]);
+console.log(numbersArr.length);
+numbersArr.push(10);
+console.log(numbersArr);
+numbersArr.pop();
+console.log(numbersArr);
+
+//practice
+const colors = ['красный', 'зелёный', 'синий'];
+console.log('Первый элемент:', colors[0]);
+console.log('Последний элемент:', colors[colors.length - 1]);
+colors[1] = 'жёлтый';
+console.log('Полный массив:', colors);
+
+const students = [];
+students.push('Анна');
+students.push('Иван');
+students.push('Мария');
+students.pop();
+console.log(students);
+
+let numbers2 = [10,20,30];
+for (let i = 0; i < numbers2.length; i++) {
+    console.log(numbers2[i]);
+}
+
+for(let val of numbers2) {
+    console.log(val);
+}
+let mixedArray = [1, "txt", true, 3.14];
+console.log(mixedArray);
+
+console.log(numbersArr.includes(1));
+console.log(numbersArr.indexOf(2));
+
+//practice
+const cities = ['Москва', 'Санкт‑Петербург', 'Новосибирск', 'Екатеринбург', 'Казань'];
+const searchCity = 'Екатеринбург';
+const index = cities.indexOf(searchCity);
+if (index !== -1) {
+  console.log(index);
+}
