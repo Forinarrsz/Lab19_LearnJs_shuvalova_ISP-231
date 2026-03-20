@@ -179,3 +179,71 @@ const index = cities.indexOf(searchCity);
 if (index !== -1) {
   console.log(index);
 }
+
+let user2 = {
+    name: "ivan",
+    age: 20,
+    isStudent: true,
+    sayHi: function () {
+        console.log(`hi, my name is ${name}`);
+    },
+};
+
+user2.sayHi();
+
+console.log(user2.name);
+console.log(user2.age);
+console.log(user2["name"]);
+//practice
+const book = {
+  title: 'Мастер и Маргарита',
+  author: 'Михаил Булгаков',
+  year: 1966
+};
+console.log('Название:', book.title);
+console.log('Автор:', book.author);
+console.log('Год издания:', book.year);
+book.year = 1967;
+console.log('Обновлённый год издания:', book.year);
+
+user2.age = 33;
+user2.name = "vasya";
+delete user2.isStudent;
+console.log(user2);
+
+//practice
+let car = {
+    brand: "Tesla",
+    year: 2025,
+    
+    getInfo: function () {
+        console.log(`brand: ${this.brand}, year: ${this.year}`);
+    },
+};
+
+for (let key in user2) {
+    console.log(key + ": " + user2[key]);
+}
+
+let product = {
+  name: 'Смартфон',
+  price: 29990,
+  category: 'Электроника',
+  inStock: true,
+  color: 'чёрный'
+};
+
+for (const key in product) {
+  console.log(`${key}: ${product[key]}`);
+}
+
+let student2 = {
+    name: "Gosha",
+    skills: ["python", "c#", "JS"],
+    address: {
+        city: "Moscow",
+        street: "pr-t Lenina",
+    },
+};
+console.log(student2.skills[0]);
+console.log(student2.address.city);
