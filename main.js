@@ -247,3 +247,4 @@ let student2 = {
 };
 console.log(student2.skills[0]);
 console.log(student2.address.city);
+//complete
